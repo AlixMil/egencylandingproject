@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import logo from './assets/eGENCY.svg'
 import scooterGuy from './assets/Saly-3.svg'
+import oneoneImg from './assets/1 1.svg'
+import CardBlockText from './components/CardBlockText'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,6 +34,18 @@ function App() {
             <h2 className='text-6xl font-semibold'>We scratch, build and play together</h2>
             <p className='text-gray-400 leading-relaxed tracking-wider text-justify'>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
             <button className='w-32 h-12 border-red-500 border text-red-500'>Contact us</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className='flex flex-row justify-around'>
+          <div className='mt-14'>
+            <CardBlockText text="Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum." />
+            <CardBlockText text="Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum." />
+            <CardBlockText text="Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum." />
+          </div>
+          <div>
+            <img src={oneoneImg} className="w-[400px]" />
           </div>
         </div>
       </section>
