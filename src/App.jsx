@@ -5,6 +5,13 @@ import oneoneImg from './assets/1 1.svg'
 import bikeGuy from './assets/Saly-5.svg'
 import babyImage from './assets/Saly-22.svg'
 import subscribeImg from './assets/Saly-6.svg'
+import visa from './assets/visa.svg'
+import americanexpress from './assets/americanexpress.svg'
+import paypal from './assets/paypal.svg'
+import mastercard from './assets/mastercard.svg'
+import stripe from './assets/stripe.svg'
+import bitcoin from './assets/bitcoin.svg'
+import bancontact from './assets/bancontact.svg'
 
 import bagIcon from './assets/Bag 2.svg'
 import ticketIcon from './assets/Ticket Star.svg'
@@ -15,6 +22,7 @@ import shoppingIcon from './assets/Buy.svg'
 
 import CardBlockText from './components/CardBlockText'
 import CardWithIcon from './components/CardWithIcon'
+import DescribeCard from './components/DescribeCard'
 
 function App() {
   const [articles, setArticles] = useState([
@@ -124,19 +132,86 @@ function App() {
         </div>
       </section>
       <section>
-        <div className='flex bg-red-300 justify-around items-center'>
-          <div className=''>
-            <h1 className='text-6xl max-w-4xl'>Grow your business with better Shipping organizations</h1>
-            <div className='mt-12'>
-              <input type='text' className='rounded-md py-2 px-6' placeholder='Write your email address' />
-              <input type='button' value='Subscribe' className='bg-red-500 rounded-md py-2 px-6 text-white cursor-pointer' />
+        <div className='flex bg-red-300 justify-between items-center mt-48 pl-12'>
+          <div className='w-full p-12 pt-32'>
+            <h1 className='text-4xl max-w-4xl text-[#4F4F4F]'>Grow your business with better</h1>
+            <h1 className='text-4xl max-w-4xl text-[#4F4F4F]'>Shipping organizations</h1>
+            <div className='mt-12 flex justify-start w-96 pb-12'>
+              <input type='text' className='rounded-md py-2 px-6 pr-36' placeholder='Write your email address' />
+              <input type='button' value='Subscribe' className='bg-red-500 rounded-lg py-2 px-6 text-white cursor-pointer ml-8' />
             </div>
           </div>
-          <div className='relative'>
-            <img src={subscribeImg} className='absolute w-full top-[-140px]'/>
+          <div className='relative w-full'>
+            <img src={subscribeImg} className='absolute w-[800px] mt-[-430px] ml-[-200px]'/>
           </div>
         </div>
       </section>
+      <section>
+        <div className='flex justify-between items-center m-16'>
+          <h1 className='text-6xl max-w-2xl'>The best design for your studio website</h1>
+          <a href='#'>Experienced team</a>
+        </div>
+        <div className='flex justify-around'>
+          <DescribeCard label="Audit" colorTag="bg-red-400" />
+          <DescribeCard label="Teamwork" colorTag="bg-yellow-400" />
+          <DescribeCard label="Create" colorTag="bg-green-400" />
+        </div>
+      </section>
+      <footer className='bg-[#2ED57380]'>
+        <div className='px-36 pt-12 '>
+          <div className='flex justify-between'>
+            <div className='max-w-lg text-justify'>
+              <img src={logo} className="mb-12" />
+              <p>
+                Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit entitum. Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo ripuit mentitum.
+              </p>
+            </div>
+            <div>
+              <h3 className='mb-12'>Pages</h3>
+              <ul>
+                <li>Templates</li>
+                <li>Price</li>
+                <li>Help</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className='mb-12'>Demos</h3>
+              <ul>
+                <li>Dark theme</li>
+                <li>Light theme</li>
+                <li>Classic theme</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className='mb-12'>Resources</h3>
+              <ul>
+                <li>Documentation</li>
+              </ul>
+            </div>
+          </div>
+          <div className='border-b-2 border-black flex justify-end space-x-8 p-2 mt-4'>
+            <a>New York</a>
+            <a>Dubai</a>
+            <a>Dhaka</a>
+            <a>Mumbai</a>
+            <a>Sydney</a>
+          </div>
+          <div className='flex justify-between mt-12 w-[500px] m-auto'>
+            <img src={visa} className="cursor-pointer" />
+            <img src={americanexpress} className="cursor-pointer" />
+            <img src={paypal} className="cursor-pointer" />
+            <img src={mastercard} className="cursor-pointer" />
+            <img src={stripe} className="cursor-pointer" />
+            <img src={bitcoin} className="cursor-pointer" />
+            <img src={bancontact} className="cursor-pointer" />
+          </div>
+          <div className='flex justify-between mt-16'>
+            <span>© All Rights Reserved.</span>
+            <span>Terms of Service</span>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
